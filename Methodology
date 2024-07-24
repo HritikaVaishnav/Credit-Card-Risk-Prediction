@@ -1,0 +1,33 @@
+## ML Model Deployment Project
+**Tech Stack:** Python, Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn, XGBoost, Statsmodels, SciPy, LabelEncoder, RandomForestClassifier, DecisionTreeClassifier, Hyperparameter Tuning, Excel
+
+### Description:
+1. Data Handling:
+* Loaded and inspected datasets with Pandas to understand data structure and content.
+* Merged datasets using inner join to ensure no null values and to maintain data integrity.
+* Performed data cleaning by identifying and removing rows with -99999 values, treating them as nulls.
+* Addressed missing values and duplicates, ensuring clean and reliable data for model training.
+
+2. Descriptive Analysis:
+* Conducted descriptive statistics and visualized data distributions to understand underlying patterns and relationships.
+* Applied hypothesis testing to check for cardinality or co-linearity in categorical features using Chi-Square, T-test, and ANOVA tests.
+
+3. Feature Engineering:
+* Selected features based on hypothesis testing results and Variance Inflation Factor (VIF) to minimize multicollinearity.
+* Performed one-hot encoding on categorical variables and label encoding on ordered categorical data for model compatibility.
+
+4. Model Training and Evaluation:
+* Trained and evaluated multiple models: Random Forest Classifier, XGBoost Classifier, and Decision Tree Classifier.
+* Achieved highest accuracy with XGBoost Classifier at 0.78, followed by Random Forest at 0.76 and Decision Tree at 0.71.
+* Evaluated model performance using accuracy, precision, recall, and F1 scores for each class.
+
+5. Hyperparameter Tuning:
+* Fine-tuned the XGBoost model by performing grid search over a range of hyperparameters.
+* Iteratively trained and evaluated models to find the optimal combination of hyperparameters.
+
+6.Deployment Preparation:
+* Applied the tuned XGBoost model to an unseen dataset for final prediction.
+* Saved the final predictions to an Excel file for easy access and review.
+
+7. Runtime Calculation:
+* Implemented runtime measurement to ensure efficient execution, crucial for deployment scenarios.
